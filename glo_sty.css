@@ -1,0 +1,122 @@
+/* glo_sty.css */
+
+body {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    background-color: #f6f7f9; /* Fondo claro, neutro */
+    color: #333; /* Texto oscuro para buen contraste */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#title {
+    width: 100%;
+    background-color: #87CEEB; /* Azul claro relajante */
+    color: #003366; /* Texto azul oscuro */
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#title h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+#options {
+    width: 80%;
+    background-color: #FFD700; /* Amarillo pastel */
+    color: #4a4a4a; /* Texto gris oscuro */
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#options h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+#options a {
+    color: #004080; /* Azul oscuro para los enlaces */
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+#options a:hover {
+    text-decoration: underline;
+}
+
+#content {
+    width: 80%;
+    background-color: #D3F8E2; /* Fondo verde pastel */
+    color: #2c3e50; /* Texto oscuro */
+    text-align: left; /* Alineación izquierda para facilitar la lectura */
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Diseño para los títulos separadores (letras) */
+#content h2 {
+    font-size: 2em;
+    color: #004d40; /* Verde oscuro */
+    border-bottom: 2px solid #80cbc4; /* Línea decorativa */
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+/* Diseño para las palabras (términos) */
+#content h3 {
+    font-size: 1.5em;
+    color: #00796b; /* Verde intenso */
+    margin: 15px 0 5px 0;
+    text-transform: uppercase; /* Letras en mayúscula para destacar */
+    font-weight: 700;
+}
+
+/* Diseño para los significados */
+#content p {
+    font-size: 1em;
+    color: #4a4a4a; /* Gris oscuro */
+    line-height: 1.6; /* Espaciado entre líneas para mejorar la lectura */
+    margin-bottom: 10px;
+    text-align: justify; /* Alineación justificada para un aspecto más limpio */
+}
+
+/* Separación visual entre letras y contenido */
+#content h2 + h3 {
+    margin-top: 20px; /* Añade espacio al cambiar de sección */
+}
+
+/* Opcional: resaltado de palabras clave */
+#content p strong {
+    color: #004d40; /* Resalta palabras importantes en verde oscuro */
+    font-weight: bold;
+}
+
+
+/* Aseguramos que el diseño sea responsivo */
+@media (max-width: 768px) {
+    #options, #content {
+        width: 95%;
+    }
+
+    #title h1 {
+        font-size: 2em;
+    }
+
+    #options h2, #content h2 {
+        font-size: 1.2em;
+    }
+}
+/*Adorno en el hipervinculo */
+#content a{
+    text-decoration: none;
+    color: #00796b;
+}
